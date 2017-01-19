@@ -2,11 +2,7 @@ var noadsver = "$Id: no-ads.pac,v 6.1 2016/10/15 01:01:23 loverso Exp loverso $"
 
 var normal = "DIRECT";
 
-var blackhole = "PROXY 255.255.255.0:3421";
-if (typeof(navigator) != "undefined"
-	&& navigator.appVersion.indexOf("Mac") != -1) {
-    blackhole = "PROXY 0.0.0.0:3421";
-}
+var blackhole = "PROXY 0.0.0.0:3421";
 
 
 var localproxy = normal;
