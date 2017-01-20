@@ -4730,6 +4730,38 @@ function FindProxyForURL(url, host) {
 		  shExpMatch(host, "*.zmedia.com") ||
 		  shExpMatch(host, "zv1.november-lax.com") ||
 		  shExpMatch(host, "*.zv1.november-lax.com") ||
+	   
+		shExpMatch(host,"adjust.io") ||
+		shExpMatch(host,"airbrake.io") ||
+		shExpMatch(host,"appboy.com") ||
+		shExpMatch(host,"appsflyer.com") ||
+		shExpMatch(host,"apsalar.com") ||
+		shExpMatch(host,"bango.combango.org") ||
+		shExpMatch(host,"bango.net") ||
+		shExpMatch(host,"bkrtx.com") ||
+		shExpMatch(host,"bugsense.com") ||
+		shExpMatch(host,"burstly.com") ||
+		shExpMatch(host,"chartboost.com") ||
+		shExpMatch(host,"count.ly") ||
+		shExpMatch(host,"crashlytics.com") ||
+		shExpMatch(host,"crittercism.com") ||
+		shExpMatch(host,"custom-blacklisted-tracking-example.com") ||
+		shExpMatch(host,"do-not-tracker.org") ||
+		shExpMatch(host,"eviltracker.net") ||
+		shExpMatch(host,"flurry.com") ||
+		shExpMatch(host,"getexceptional.com") ||
+		shExpMatch(host,"inmobi.com") ||
+		shExpMatch(host,"localytics.com") ||
+		shExpMatch(host,"mobile-collector.newrelic.com") ||
+		shExpMatch(host,"mobileapptracking.com") ||
+		shExpMatch(host,"playtomic.com") ||
+		shExpMatch(host,"stathat.com") ||
+		shExpMatch(host,"supercell.net") ||
+		shExpMatch(host,"tapjoy.com") ||
+		shExpMatch(host,"trackersimulator.org") ||
+		shExpMatch(host,"usergrid.com") ||
+
+	   
          shExpMatch(host, "adserver.*")
        ) {
        return "PROXY 8.8.8.8:53";
