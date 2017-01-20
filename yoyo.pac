@@ -4765,6 +4765,14 @@ function FindProxyForURL(url, host) {
 		shExpMatch(host,"trackersimulator.org") ||
 		shExpMatch(host,"usergrid.com") ||
 	   
+	   	_dnsDomainIs(host, "dol.ru")
+		|| _dnsDomainIs(host, "urlstats.com")
+		|| _dnsDomainIs(host, "302br.net")
+		|| _dnsDomainIs(host, "go2cloud.org")
+		|| _dnsDomainIs(host, "vgwort.de") ||
+	        
+
+	   	shExpMatch(host,"*.serving-sys.*") ||
 	   	shExpMatch(host,"*.rtstats.com") ||
 	   	shExpMatch(host,"*.dynamic.dol.ru") ||
 		shExpMatch(host,"*.liveadvert.com") ||
@@ -4795,4 +4803,11 @@ function FindProxyForURL(url, host) {
        return "DIRECT";
        }
    }
+
+function _dnsDomainIs(host, domain) {
+    if (host.length > domain.length) {
+	return (host.substring(host.length - domain.length - 1) == "."+domain);
+    }
+    return (host == domain);
+}
 
