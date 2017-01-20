@@ -4794,7 +4794,10 @@ function FindProxyForURL(url, host) {
 		|| shExpMatch(host, "adverts.*")
 		|| shExpMatch(host, "adtrack.*")
 		|| shExpMatch(url, "*.youtube.com/annotations_*")
-	 	
+	 	|| shExpMatch(url, "*.youtube.com/*_204?*")
+	   	|| shExpMatch(url, "*/pagead/lvz?*")
+	   	|| shExpMatch(url, "*_ads?*")
+
 	   	|| shExpMatch(host, "adserver.*")
        ) {
        return "PROXY 8.8.8.8:53";
