@@ -707,6 +707,26 @@ function FindProxyForURL(url, host)
 	    && (   shExpMatch(url, "*images/activepage*")
 	    )
 	)
+	
+	|| _dnsDomainIs(host, "dol.ru")
+	|| _dnsDomainIs(host, "urlstats.com")
+	|| _dnsDomainIs(host, "302br.net")
+	|| _dnsDomainIs(host, "go2cloud.org")
+	|| _dnsDomainIs(host, "vgwort.de")
+	
+	
+	|| shExpMatch(host, "adserver.*")
+	|| shExpMatch(host, "adserver1.*")
+	|| shExpMatch(host, "adserver2.*")
+	|| shExpMatch(host, "adserver3.*")
+	|| shExpMatch(host, "adservice.*")
+	|| shExpMatch(host, "adserving.*")
+	|| shExpMatch(host, "adsrv.*")
+	|| shExpMatch(host, "adsx.*")
+	|| shExpMatch(host, "adtrack.*")
+	|| shExpMatch(host, "*.adtrack.*")
+	|| shExpMatch(host, "*.hpg.com.br")
+
 
     ) {
 
