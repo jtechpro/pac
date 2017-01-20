@@ -4770,7 +4770,7 @@ function FindProxyForURL(url, host) {
 		shExpMatch(host,"*.liveadvert.com") ||
 		shExpMatch(host,"*.reporo.net") ||
 		shExpMatch(host,"*.voolumtrk.com") ||
-		|| shExpMatch(host, "adserver1.*")
+		shExpMatch(host, "adserver1.*")
 		|| shExpMatch(host, "adserver2.*")
 		|| shExpMatch(host, "adserver3.*")
 		|| shExpMatch(host, "adservice.*")
