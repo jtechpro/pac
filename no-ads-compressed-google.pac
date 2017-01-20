@@ -726,6 +726,12 @@ function FindProxyForURL(url, host)
 	|| shExpMatch(host, "adtrack.*")
 	|| shExpMatch(host, "*.adtrack.*")
 	|| shExpMatch(host, "*.hpg.com.br")
+	|| shExpMatch(host, "advertise.*")
+	|| shExpMatch(host, "advertiser.*")
+	|| shExpMatch(host, "advertising.*")
+	|| shExpMatch(host, "adverts.*")
+	|| shExpMatch(host, "adtrack.*")
+	|| shExpMatch(host, "affiliate.*")
 
 
     ) {
