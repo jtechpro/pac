@@ -4732,10 +4732,14 @@ function FindProxyForURL(url, host) {
 		  shExpMatch(host, "*.zv1.november-lax.com") ||
 	   
 		shExpMatch(host,"adjust.io") ||
+	   	shExpMatch(host,"*.adjust.io") ||
+	   	shExpMatch(host,"*.*.adprotect.net") ||
 		shExpMatch(host,"airbrake.io") ||
+	   	shExpMatch(host,"*.airbrake.io") ||
 		shExpMatch(host,"appboy.com") ||
 		shExpMatch(host,"appsflyer.com") ||
 		shExpMatch(host,"apsalar.com") ||
+	   	shExpMatch(host,"*.apsalar.com") ||
 		shExpMatch(host,"bango.combango.org") ||
 		shExpMatch(host,"bango.net") ||
 		shExpMatch(host,"bkrtx.com") ||
@@ -4760,7 +4764,28 @@ function FindProxyForURL(url, host) {
 		shExpMatch(host,"tapjoy.com") ||
 		shExpMatch(host,"trackersimulator.org") ||
 		shExpMatch(host,"usergrid.com") ||
-
+	   
+	   	shExpMatch(host,"*.rtstats.com") ||
+	   	shExpMatch(host,"*.dynamic.dol.ru") ||
+		shExpMatch(host,"*.liveadvert.com") ||
+		shExpMatch(host,"*.reporo.net") ||
+		shExpMatch(host,"*.voolumtrk.com") ||
+		|| shExpMatch(host, "adserver1.*")
+		|| shExpMatch(host, "adserver2.*")
+		|| shExpMatch(host, "adserver3.*")
+		|| shExpMatch(host, "adservice.*")
+		|| shExpMatch(host, "adserving.*")
+		|| shExpMatch(host, "adsrv.*")
+		|| shExpMatch(host, "adsx.*")
+		|| shExpMatch(host, "adtrack.*")
+		|| shExpMatch(host, "*.adtrack.*")
+		|| shExpMatch(host, "*.hpg.com.br")
+		|| shExpMatch(host, "advertise.*")
+		|| shExpMatch(host, "advertiser.*")
+		|| shExpMatch(host, "advertising.*")
+		|| shExpMatch(host, "adverts.*")
+		|| shExpMatch(host, "adtrack.*")
+		|| shExpMatch(url, "*.youtube.com/annotations_*")
 	   
          shExpMatch(host, "adserver.*")
        ) {
