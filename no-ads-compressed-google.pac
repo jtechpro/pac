@@ -73,6 +73,7 @@ function FindProxyForURL(url, host)
 
 	|| (host == "images.rottentomatoescdn.com"
 	    && shExpMatch(url, "*/scripts?"))
+	|| (host == "google.co.in" && shExpMatch(url,"*/gen204")
 
 	|| ((   _dnsDomainIs(host, "wunderground.com")
 	     || _dnsDomainIs(host, "wund.com")
